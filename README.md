@@ -2,29 +2,49 @@
 
 ## Overview
 
-Production-grade Retrieval Augmented Generation (RAG) system designed to analyze NASA Mars mission reports.
+A production-grade Retrieval-Augmented Generation (RAG) system built to analyze NASA Mars mission reports.
 
-### Goals
+## Objectives
 
+- Semantic Search
+- BM25 Search
 - Hybrid Retrieval
-- Source Citations
 - Cross Encoder Reranking
+- Source Citations
 - RAGAS Evaluation
-- Production Deployment
+- FastAPI Deployment
 
----
+## Architecture
+
+```text
+NASA PDFs
+    ↓
+Ingestion
+    ↓
+Embedding Generation
+    ↓
+Vector Database
+    ↓
+Hybrid Retrieval
+    ↓
+Reranking
+    ↓
+LLM
+    ↓
+Answer + Citations
+```
+
+## Project Status
+
+✅ Project Initialization
+
+🚧 Data Ingestion Phase (In Progress)
 
 ## Tech Stack
 
 - Python
 - LlamaIndex
-- pgvector
+- ChromaDB / pgvector
 - FastAPI
-- PostgreSQL
 - RAGAS
-
----
-
-## Status
-
-Project Initialization
+- PostgreSQL
