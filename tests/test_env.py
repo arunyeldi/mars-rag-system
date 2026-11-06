@@ -1,0 +1,9 @@
+# tests/test_env.py
+
+from src.config import (
+    AZURE_OPENAI_ENDPOINT,
+    AZURE_OPENAI_EMBEDDING_DEPLOYMENT
+)
+
+print(AZURE_OPENAI_ENDPOINT)
+print(AZURE_OPENAI_EMBEDDING_DEPLOYMENT)
