@@ -1,14 +1,26 @@
-"""
-PDF loading functionality.
-Responsible for loading NASA reports.
-"""
+from pathlib import Path
+import pymupdf
 
 
-def load_pdf(file_path: str):
+def load_pdf(pdf_path: str) -> str:
     """
-    Placeholder function.
-
-    Later:
-    PDF -> Extract Text
+    Extract text from PDF.
     """
-    print(f"Loading PDF: {file_path}")
+
+    pdf_file = Path(pdf_path)
+
+    if not pdf_file.exists():
+        raise FileNotFoundError(
+            f"PDF not found: {pdf_path}"
+        )
+
+    document = pymupdf.open(pdf_path)
+
+    text = ""
+
+    for page in document:
+        text += page.get_text()
+
+    document.close()
+
+    return text

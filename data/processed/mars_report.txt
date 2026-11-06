@@ -1,0 +1,626 @@
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+IAC-22-A3.3A.10
+Mars Sample Return – An Overview of the Capture, Containment and Return System
+Giuseppe Cataldoa*, Brian Childsb, Jim Corlissc, Brendan Feehana, Peter Gaged, Justin Linb,
+Suparna Mukherjeea, Mark Neumana, Fernando Pelleranoa, Bruno Sarlia, Christine Szalaib,
+Leo Teeneya, Jeremy Vander Kamd, Todd Whited, Calinda Yewa, Carlie Zumwalta
+aNASA Goddard Space Flight Center, 8800 Greenbelt Road, Greenbelt, MD 20771
+bJet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, Pasadena, CA 91109
+cNASA Langley Research Center, 1 NASA Drive, Hampton, VA 23666
+dNASA Ames Research Center, De France Avenue, Mountain View, CA 94035
+* Corresponding Author: Giuseppe.Cataldo@NASA.gov
+Abstract
+The Mars Sample Return campaign aims at bringing back rock and atmospheric samples from Mars to
+Earth to answer key questions about Mars’ biological evolution by means of four elements. The first one,
+Mars 2020, landed on the Red Planet on February 18, 2021 and has to date collected a number of samples
+through the Perseverance rover. The two subsequent missions aim to recover the sample tubes, launch them
+into Mars orbit and transport them back to Earth. The last element is the Sample Receiving Facility, where the
+samples would be analyzed. These elements are currently in the planning and design stages of development
+and represent an international effort comprising NASA, the European Space Agency and many industry
+partners. The work presented here provides an overview of the current design and concept of operations of
+the NASA-provided Capture, Containment, and Return System (CCRS), which is the payload of the ESA-
+provided Earth Return Orbiter (ERO). ERO would rendezvous with the orbiting samples and CCRS would
+capture them, contain them and robotically insert them into a capsule that would return the samples to Earth,
+the Earth Entry System (EES). About three days before arrival on Earth, CCRS releases the EES on an Earth
+entry trajectory, which then passively enters Earth’s atmosphere, descends on a highly predictable trajectory
+and safely lands notionally at the Utah Test and Training Range. The decision to implement Mars Sample
+Return will not be finalized until NASA’s completion of the National Environmental Policy Act (NEPA)
+process. This document is being made available for information purposes only.
+Keywords: Mars Sample Return, Planetary Protection, Break the Chain, Containment Assurance.
+1.
+Introduction
+The Mars Sample Return (MSR) campaign aims to seek
+signs of ancient life on the Red Planet by collecting com-
+pelling samples of rock, regolith (broken rock and dust)
+and atmosphere for a possible return to Earth [1, 2, 3, 4].
+Years of data from past missions to Mars have confirmed
+that some areas offered habitable conditions that were ca-
+pable of supporting life in the past. Much of this warmer,
+wetter period is believed to have occurred about three bil-
+lion years ago, in the same geologic timeframe as early
+life was blooming on Earth. This commonality raises the
+prospect that discoveries on Mars can give important in-
+sights about the origin and evolution of life on Earth.
+MSR would fulfill many years of external guidance
+to NASA, including the top recommendation of the U.S.
+planetary community in their most recent national strat-
+egy, titled Vision and Voyages for Planetary Science in the
+Decade 2013-2022 [5]. Beyond the search for life, the
+MSR campaign could also help scientists understand the
+detailed geological history of Mars, the evolution of its
+climate, and any hazards in the dust of the Red Planet that
+could affect future human explorers.
+Figure 1 shows the four elements of the MSR campaign.
+The first one, Mars 2020, launched on July 30, 2020 and
+landed in the Jezero Crater on February 18, 2021.
+To
+date, it has collected 1 atmospheric and 12 rock samples
+through the Perseverance rover. The second element is
+the Sample Retrieval Lander (SRL), which would launch
+no earlier than 2028 to carry the Sample Recovery He-
+licopters (SHRs) and the Mars Launch System (MLS).
+While Perseverance would be the primary means to de-
+liver the samples, the SHRs would play a back-up role
+in case Perseverance would become unable to perform
+this task. The samples would thus be positioned inside a
+container aboard the MLS, which would perform the first
+launch from another planet to put the samples in Mars or-
+IAC-22-A3.3A.10
+Page 1 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 1: Elements of the planned MSR campaign.
+bit. The third element, the Earth Return Orbiter (ERO),
+would launch no earlier than 2027 to relay support for
+SRL, capture the orbiting sample (OS) and return it safely
+to Earth. These two elements, which form the MSR Pro-
+gram, are currently in the planning and design stages of
+development and represent an international effort compris-
+ing NASA, the European Space Agency (ESA) and many
+industrial partners. The fourth element of the campaign is
+the Sample Receiving Project (SRP), which is part of the
+Mars Exploration Program and aims to design and build a
+facility that would host and analyze the returned samples
+under the most protective measures, comparable to bio-
+hazard safety level 4, generally employed for safely han-
+dling biological toxins and known infectious agents used
+in Earth-based research labs. The samples would be kept
+under these stringent containment conditions and not re-
+leased to other laboratories until it is determined that they
+are safe through extensive analyses or rendered biologi-
+cally inert through sterilization. Similar to the lunar sam-
+ples from the Apollo missions to the Moon, the samples
+to be returned from Mars would be studied in great detail
+for many decades by future generations of scientists, using
+instruments and techniques that have yet to be invented.
+The focus of this work is the Capture, Containment
+and Return System (CCRS), which is the NASA-provided
+payload of ESA’s ERO. The role of CCRS is to capture
+the OS upon rendezvous with ERO, contain it and roboti-
+cally insert it into the Earth Entry System (EES), a capsule
+that would return the OS to Earth. About three days be-
+fore arrival on Earth, CCRS would release the EES on an
+Earth entry trajectory. The EES would then passively en-
+ter Earth’s atmosphere, descend on a highly predictable
+trajectory and safely land notionally at the Utah Test and
+Training Range. This work presents an overview of the
+current design and concept of operations of CCRS.
+2.
+Motivation and background
+Mars is a challenging environment for active biology
+or biomolecules due to the following factors: 1) the high-
+radiation environment caused by Mars’ thin atmosphere
+damages biomolecules, 2) temperature and water activity
+on Mars rarely (if ever) reaches levels required for active
+metabolism, 3) absent active metabolism biomolecules
+will be degraded significantly. As a matter of fact, the
+samples being collected by the Perseverance rover are
+from the first few centimeters of a planetary surface that is
+very dry and highly irradiated naturally by the Sun, which
+would sterilize all known cellular biology directly exposed
+at the surface. This is one of the reasons why NASA’s sci-
+ence strategy is focused on finding traces of ancient life
+from long ago, when the Martian environment was wetter
+and warmer, and not modern life in these harsh conditions.
+In general, potential hazards present a very low likeli-
+hood. For example, host-pathogen relationships are evolu-
+tionary in nature and Mars-Earth exchange is infrequent,
+so any pathogens are likely to be non-specific to Earth
+species (including humans). Invasive species from Mars
+would also encounter a largely inhospitable environment
+on Earth.
+Finally, Mars material arrives naturally on
+Earth as meteorites, some on fast paths that do not expe-
+IAC-22-A3.3A.10
+Page 2 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 2: Overview of the ERO mission with the main phases highlighted.
+rience any sterilization. Despite a low hazard likelihood,
+nonetheless, the potential for a high consequence cannot
+be excluded. As a result, MSR plans to adopt a “Safety
+First” approach by safely containing all unsterilized Mars
+material returned to Earth.
+This approach is in line with current policies [6, 7, 8],
+which all affirm the need for protecting solar system bod-
+ies from harmful contamination by terrestrial materials
+(forward planetary protection – FPP) while protecting the
+Earth-Moon system from possible harmful extraterrestrial
+contamination that may be returned from other solar sys-
+tem bodies (backward planetary protection – BPP).
+For restricted sample return missions (i.e., those whose
+samples could cause harmful biological contamination of
+the Earth’s biosphere), the translation of these policies
+into engineered systems consists of establishing and im-
+plementing a strategy and design concepts to break the
+chain of contact with the target body, isolate, and robustly
+contain the restricted samples. This is in practice the role
+CCRS plays by sterilizing the contaminated surfaces, en-
+forcing a clean zone and containing the sample tubes in
+two redundant containers. ERO further contributes to this
+by avoiding Earth after release of the EES.
+3.
+Mission and payload overview
+Figure 2 shows an overview of the ERO mission. ERO
+would launch from Kourou, French Guyana, on an Ari-
+ane 64 on a direct injection to Mars. Near-Earth com-
+missioning would continue for about 30 days, while the
+outbound transfer with heliocentric parking orbit about 3
+years. Mars orbit insertion would occur through chemi-
+cal maneuver for about 2 weeks, before starting spiralling
+down for less than 1 year. In low Mars orbit, over the
+course of 1-1.5 years, the following activities would take
+place: ultra-high frequency relay support for the entry, de-
+scent and landing of the Sample Retrieval Lander and for
+the launch of the Mars Launch System; rendezvous with
+the orbiting sample and containment operations. With the
+orbiting sample secured in the CCRS payload, ERO would
+start spiraling up for less than 1 year and then head back
+to Earth through an inbound transfer of about 1 year. The
+EES delivery phase would occur approximately 3 days be-
+fore arrival on Earth, with the EES being released and
+ERO performing an Earth avoidance maneuver that would
+park it in a heliocentric orbit that would avoid Earth for at
+least 100 years (i.e., as far as can be reasonably predicted).
+Figure 3 provides an overview of the CCRS payload
+with its main elements and subcomponents: 1) the Cap-
+ture Enclosure (CE), 2) the Assembly Enclosure (AE), 3)
+the Earth Entry System (EES), and 4) the Micrometeoroid
+IAC-22-A3.3A.10
+Page 3 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 3: Overview of the CCRS payload with its main elements highlighted.
+Protection System (MMPS).
+The Capture Enclosure, directly exposed to Mars mate-
+rial, would be the place for capturing and containing the
+OS while providing control of Mars particles, as well as
+a containment and sterilization capability that serves to
+break the chain of contact between Mars and Earth.
+After capture, the OS would be sealed inside a Primary
+Containment Vessel (PCV) and the seamline of the PCV
+would be heat sterilized. The Assembly Enclosure, con-
+sidered clean and not exposed to Mars material, would
+receive the OS in the sterilized PCV and robotically as-
+semble it into a secondary containment vessel (SCV) in-
+side the EES Aeroshell. The combined OS, PCV and SCV
+would form the Contained OS (COS).
+During the spiral-up phase, where electric propulsion is
+used to raise ERO’s orbit, the Capture Enclosure would
+be ejected in Mars or heliocentric orbit; options for final
+disposition of the CE are actively being evaluated with
+regards to both FPP (e.g., a stable orbit of required life-
+time, or bioburden with or without burnup/breakup analy-
+ses) and BPP (Mars particle control).
+The combined EES Aeroshell and COS would form the
+Earth Entry System (EES) and reside inside the Microm-
+eteoroid Protection System (MMPS), a protective debris
+shield, during transit back to Earth; the MMPS would
+support achievement of BPP compliance by providing mi-
+crometeoroid protection measures to ensure integrity of
+the entry system.
+Upon successful delivery by ERO to the desired release
+position, velocity and attitude, the EES would be released
+from CCRS through a spin eject mechanism on an Earth
+return path with high reliability and precision.
+The EES would then deliver the Mars samples to the
+selected landing site on Earth, providing containment of
+the COS throughout approach, entry, descent and landing.
+BPP compliance within this phase would be addressed
+through trajectory selection, redundant containment lay-
+ers, thermal protection for entry, and impact resistance.
+The AE and MMPS would remain attached to ERO,
+which would be guided, under ESA’s direction, to a stable
+heliocentric orbit that will not intersect Earth for at least
+100 years in the nominal mission plan.
+All these operations have been subdivided into specific
+phases, which will be described in more detail in Sec. 4.
+4.
+Concept of operations
+4.1.
+Capture and Configuration
+In the Capture and Configuration phase, ERO performs
+a rendezvous maneuver with the OS using CE-mounted
+light detection and ranging (LIDAR) units and narrow-
+angle cameras to detect and track the OS. As the OS ap-
+proaches CCRS, a linear transfer mechanism (LTM) and
+lid remains stowed and opened, respectively, until two
+planes of light-emitting diode (LED) sensors detect the
+OS within the capture volume. Once the capture sensors
+are triggered, the linear transfer mechanism autonomously
+deploys within the capture cone to physically capture the
+OS, while the lid simultaneously closes to contain Martian
+dust within the capture volume. The linear transfer mecha-
+IAC-22-A3.3A.10
+Page 4 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 4: Schematic view of aseptic transfer.
+nism funnels the OS into the orientation mechanism (OM)
+on the other end of the cone. The orientation mechanism
+manipulates the OS into the correct orientation and a set
+of cameras capture images of the OS end-caps as a means
+of ground verification that OS configuration is successful.
+4.2.
+OS Installation and Aseptic Transfer
+In the OS Installation and Aseptic Transfer phase, opera-
+tions are performed to install the OS into its Primary Con-
+tainment Vessel (PCV) and then permit the PCV to exit
+the Capture Enclosure with no unsterilized Martian mate-
+rial outside the PCV.
+The lid of the PCV is launched on the seating mech-
+anism (SM), a component of the Aseptic Transfer and
+Encapsulation System (ATES). While the OS is securely
+held in the orientation mechanism, the seating mechanism
+translates the PCV lid toward the OS until it docks to an
+exposed interface on the OS. The assembled lid/OS is then
+extracted from the orientation mechanism, flipped 180◦
+and maneuvered to a position above the PCV base.
+To seal the PCV, a heated shrink fit operation is per-
+formed where the rim of the PCV base is locally heated
+to > 500◦C, which expands the interface. While the base
+is heated, the ambient-temperature PCV lid (and OS) is
+driven into the base and the base is cooled to complete the
+seal. The heated shrink fit joint is robust enough to remain
+sealed during landing load tests. During this operation,
+an outer lid is also installed over top the PCV, which will
+close out the hole left once the PCV is extracted. This
+outer lid becomes the barrier that prevents any particles
+from migrating from the Mars dirty Capture Enclosure to
+the Earth clean Assembly Enclosure (see Fig. 4).
+The newly formed PCV seal is then heated to > 500◦C
+for 5 seconds so that any material on exposed portions
+of the PCV lid or base is sterilized.
+The sterilization
+time/temperature profile was selected to destroy any po-
+tential biohazards from Mars. The sterilization parame-
+ters are designed to ensure pyrolysis (i.e., destruction) of
+any potentially catalytic proteins, which MSR has identi-
+fied as the most resilient form of possible biological con-
+tamination. These parameters are well in excess of those
+required to sterilize the bacterial endospores that are typi-
+cally considered the bounding case for forward planetary
+protection.
+The OS contained within the PCV is now ready to be re-
+leased to the Robotic Transfer Assembly System (RTAS)
+for installation into the EES.
+4.3.
+EES On-Orbit Assembly
+In the EES On-Orbit Assembly phase, the combination of
+PCV, SCV Lid and Aerothermal Closeout, called PSA, is
+removed from the ATES separation mechanism and in-
+stalled into the EES. There are several steps involved in
+the operation:
+1. The PCV lid is released from the seating mechanism
+while still constrained by the ATES base separation
+mechanism.
+2. RTAS moves the end effector (EE) into contact with
+the PSA, at which point the EE gripper partially
+closes to cage the PSA.
+3. With the PSA caged, the ATES separation mecha-
+nism is activated to fully release the PSA.
+4. RTAS retracts the PSA out of the ATES separation
+mechanism and, once in free space, the RTAS EE
+gripper fully closes to pull the PSA into rigid con-
+tact.
+IAC-22-A3.3A.10
+Page 5 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 5: Schematic view of the EES on-orbit assembly. The Robotic Transfer Assembly System rotates to extract the
+samples attached to the PSA from the Capture Enclosure and install them into the EES Aeroshell at the top of the
+Assembly Enclosure.
+5. RTAS rotates 90◦to align the PSA to the SCV body
+in the Earth Entry System;
+6. RTAS inserts the PSA into the SCV body until axial
+contact is made.
+7. While maintaining an axial load, the RTAS EE grip-
+per partially opens to disengage from the PSA.
+8. The RTAS EE torque mechanism then rotates the
+PSA to latch the PSA to the SCV body while forming
+a containment assurance seal and hot gas barrier seal.
+These steps enable the orbiting sample to be redundantly
+contained and would represent the first on-orbit spacecraft
+assembly performed at Mars (Fig. 5).
+4.4.
+Protection, Jettison and Release
+The Protection, Jettison and Release (PJR) phase is the
+portion of the ERO mission timeline beginning at the com-
+pletion of the on-orbit assembly of the EES and ending
+when the EES is released for entry into Earth’s atmo-
+sphere. During the EPR phase, the assembled EES must
+remain protected from critical MicroMeteoroid and Or-
+bital Debris (MMOD) damage during the flight from Mars
+orbit to Earth, and then must be released on the proper tra-
+jectory to ensure that it lands safely in the planned landing
+area at UTTR (see Sec. 4.5. for additional details).
+The PJR phase operations plan can be viewed as being
+in three major stages:
+• Jettison: the CE is ejected after completion of the
+EES assembly in order to reduce return mass and
+meet project BPP requirements.
+• Mars-to-Earth transit: ERO transports CCRS toward
+Earth, while CCRS is mostly passive. The primary
+concern is protection of the EES from critical damage
+due to MMOD impacts.
+• EES release: the EES is released toward Earth on the
+proper trajectory to land at the UTTR landing site.
+4.5.
+Approach, Entry, Descent and Landing
+In the Approach, Entry, Descent and Landing phase, the
+EES would passively travel toward Earth, without active
+guidance, for about 3 days before entering Earth’s atmo-
+sphere. The EES entry and descent sequence from atmo-
+spheric interface to the ground lasts about 6 minutes, with
+a short period of high pressure and high heating environ-
+ments generated by the EES’ high initial velocity through
+the atmosphere. To survive this environment, the EES cap-
+sule would be protected by a Thermal Protection System
+(TPS) constructed of 3D Medium-density Carbon Pheno-
+lic (3MDCP) material.
+IAC-22-A3.3A.10
+Page 6 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+Fig. 6: EES test article dropped at UTTR in early 2022 at speeds comparable to what would occur during an actual
+landing event.
+The current EES design does not include a parachute to
+slow the EES descent for landing. This approach simpli-
+fies the design of the EES and eliminates a potential fail-
+ure point while maintaining adequate safety margins. The
+cone-shaped EES capsule would be approximately 1.2 m
+to 1.4 m in diameter and would land with a terminal ve-
+locity of roughly 145 km/h. Simulations and ground-based
+testing have shown that this speed, combined with the soft
+soil anticipated in the landing area, would produce landing
+loads low enough to protect the Mars samples. The land-
+ing is expected to create a depression in the soil with a di-
+ameter about the same as the EES, with soil being ejected
+from the crater to a distance of approximately 15 m.
+The EES landing is currently proposed to take place
+within the Utah Training and Testing Range (UTTR), the
+largest overland contiguous block of restricted airspace in
+the continental United States. Several landing sites in the
+continental US were considered and UTTR was selected
+because of its remote location featuring restricted access
+and special use airspace with a large landing area free
+from roads, structures, and hazardous terrain. The large,
+flat lakebed surface with minimal slope and soft playa soil
+properties are essential for softening the EES landing. Fi-
+nally, UTTR possesses the infrastructure to track the EES
+during its entry, descent and landing that enables the re-
+covery team to quickly locate and recover the vehicle and
+secure it for transportation to the sample receiving facility.
+5.
+Compliance to planetary protection requirements
+Planetary Protection (PP) requirements are specific to
+the type of mission and explored planetary body. There-
+fore, a mission is assigned one of five PP Categories (Cat-
+egories I-V) according to the type of encounter it will have
+(e.g., flyby, orbiter or lander) and the nature of its destina-
+tion (e.g., a planet, moon, comet or asteroid). If the target
+body has the potential to provide clues about life or pre-
+biotic chemical evolution, a spacecraft going there must
+meet a higher level of cleanliness and some operating re-
+strictions will be imposed [8].
+Based on this, for FPP purposes, CCRS, as a NASA-
+provided hardware element launched with ERO, which is
+an ESA-provided Mars orbiter, is proposed as a Category
+(Cat.) III payload. This applies to spacecraft which, by the
+contamination they might cause, could compromise future
+investigations on a celestial body of significant interest rel-
+ative to the process of chemical evolution and the origin of
+life. For BPP purposes, CCRS is managed under BPP con-
+straints for Cat. V Restricted Earth Return, or Cat. V(r),
+missions, which applies to payloads directly involved in
+returning samples from a body with the potential to har-
+bor life.
+Note that CCRS will comply with NASA FPP require-
+ments at delivery to ESA for integration and perform to
+NASA BPP standards as an element of the MSR Program
+during flight. The ERO spacecraft will comply with ESA’s
+PP policies for Cat. III FPP and Cat. V(r) BPP mission
+through impact avoidance.
+5.1.
+Forward Planetary Protection
+To achieve FPP compliance for ERO (and the CCRS pay-
+load), the ESA strategy is to plan ERO orbits to be stable
+for longer than the required impact avoidance period or be
+limited in duration such that the probability of spacecraft
+failure during execution remains below impact probability
+requirements (i.e., < 1% impact probability for the first
+20 years after launch, < 5% impact probability for the
+30 years thereafter) consistent with COSPAR PP guide-
+lines [7].
+While Cat. III FPP compliance through Mars impact
+avoidance imposes no bioburden limits, ERO require-
+ments include compatibility with bioburden assessments
+to ensure a bioburden-based compliance path is possible if
+mission success considerations result in Mars orbital pa-
+rameters that exceed allowable Cat. III impact probabili-
+ties. Consistent with this strategy, CCRS will be compliant
+IAC-22-A3.3A.10
+Page 7 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+to CCRS-ERO interface requirements mandating compati-
+bility with bioburden assessments. The final disposition of
+CCRS hardware not returned to Earth is expected to rely
+on trajectories, in either Mars or heliocentric orbit, that
+satisfy both Cat. III requirements for FPP and Cat. V(r)
+requirements for BPP.
+5.2.
+Backward Planetary Protection
+The different elements of CCRS would comply with BPP
+requirements in different ways.
+The CE, which is an element of CCRS that would be in
+contact with unsterilized Mars particles, would be ejected
+in space in either a Mars or heliocentric orbit. Disposal in
+Mars orbit would need to be compliant to Cat. III require-
+ments for impact avoidance; in the event the orbital life-
+time requirements cannot be met, the CE would be comply
+with bioburden limits for Mars missions. Disposal in he-
+liocentric orbit would be compliant to both Cat. III FPP
+requirements and Cat. V(r) BPP requirements for Earth
+avoidance.
+The EES would comply with Cat. III FPP and Cat. V(r)
+BPP requirements through sterilization and containment
+capabilities to break the chain of contact, anomaly detec-
+tion, micrometeoroid protection, and robust and redundant
+containment through entry, descent and landing. Events
+such as initiation of Earth return, the Earth targeting ma-
+neuver and the release of the EES, may be subject to ap-
+provals from federal and international authorities. Should
+the aggregate flight system status or performance not meet
+desired levels, the EES is planned to remain with the ERO
+in a heliocentric orbit and options for later return would be
+assessed.
+Finally, because there is a non-zero probability that
+Mars particles remain on the external surfaces of the AE,
+MMPS and spin eject mechanism (all on ERO), BPP com-
+pliance would be achieved by placing ERO on an Earth-
+intersecting trajectory up to 6 days prior to EES release
+and maneuver away from Earth 1-3 days prior to reaching
+the entry interface. This timeline may be adjusted to op-
+timize delivery parameters for BPP and mission success.
+The CCRS hardware and ERO are expected, according to
+ESA requirements, to be disposed in a heliocentric orbit
+that avoids Earth for at least 100 years; Earth avoidance is
+addressed by NASA only through the CCRS-ERO inter-
+face requirements compliant to ERO BPP requirements.
+6.
+Conclusion
+The Mars Sample Return Program is being planned and
+designed to execute the first restricted Earth return mission
+from another planet since the early Apollo lunar landings,
+in order to bring back compelling samples that would shed
+much light on the history of the Red Planet, the Earth and
+the solar system. Despite the very low likelihood that the
+samples being collected by Perseverance may contain haz-
+ards that could potentially contaminate Earth’s biosphere,
+a ”Safety First” approach is being taken. This approach
+primarily consists of a series of on-orbit operations, such
+as sterilization, redundant containment and particle con-
+trol, to break the chain of contact between Mars and Earth.
+CCRS would be the payload performing these operations
+onboard ERO. Once the samples are released on an Earth
+entry trajectory, ERO would execute an Earth avoidance
+maneuver and park itself in a heliocentric orbit.
+It is worth noting that the decision to implement Mars
+Sample Return will not be finalized until NASA’s com-
+pletion of the National Environmental Policy Act (NEPA)
+process. As part of it, NASA, in cooperation with the U.S.
+Air Force and U.S. Army, is preparing a Programmatic En-
+vironmental Impact Statement (PEIS), which will analyze
+the environmental impact of the overall MSR program and
+ensure reasonable alternatives to the proposed action have
+been considered. This document is being made available
+for information purposes only.
+Acknowledgments
+Funding provided by the National Aeronautics and
+Space Administration is gratefully acknowledged. Por-
+tions of the research were carried out at the Jet Propul-
+sion Laboratory, California Institute of Technology, un-
+der a contract with the National Aeronautics and Space
+Administration (80NM0018D0004). The authors would
+also like to thank their colleagues at the European Space
+Agency for collaboration and support in this joint mission.
+References
+[1] Timothy Haltigin, Ernst Hauber, Gerhard Kminek,
+Michael A. Meyer, Carl B. Agee, Henner Buse-
+mann, Brandi L. Carrier, Daniel P. Glavin, Lind-
+say E. Hays, Bernard Marty, Lisa M. Pratt, Arya Udry,
+Maria-Paz Zorzano, David W. Beaty, Barbara Cav-
+alazzi, Charles S. Cockell, Vinciane Debaille, Mon-
+ica M. Grady, Aurore Hutzler, Francis M. McCub-
+bin, Aaron B. Regberg, Alvin L. Smith, Caroline L.
+Smith, Roger E. Summons, Timothy D. Swindle,
+Kimberly T. Tait, Nicholas J. Tosca, Tomohiro Usui,
+Michael A. Velbel, Meenakshi Wadhwa, and Frances
+Westall. Rationale and Proposed Design for a Mars
+Sample Return (MSR) Science Program. Astrobiol-
+ogy, 22(S1):S–27–S–56, 2022. PMID: 34904885.
+[2] Monica M. Grady,
+Roger E. Summons,
+Timo-
+thy D. Swindle, Frances Westall, Gerhard Kminek,
+Michael A. Meyer, David W. Beaty, Brandi L. Carrier,
+Timothy Haltigin, Lindsay E. Hays, Carl B. Agee,
+Henner Busemann, Barbara Cavalazzi, Charles S.
+Cockell, Vinciane Debaille, Daniel P. Glavin, Ernst
+Hauber,
+Aurore Hutzler,
+Bernard Marty,
+Fran-
+cis M. McCubbin, Lisa M. Pratt, Aaron B. Reg-
+IAC-22-A3.3A.10
+Page 8 of 9
+73rd International Astronautical Congress (IAC), Paris, France, 18-22 September 2022.
+Copyright ©2022 by Dr. Giuseppe Cataldo. Published by the IAF, with permission and released to the IAF to publish in all forms.
+berg, Alvin L. Smith, Caroline L. Smith, Kimberly T.
+Tait, Nicholas J. Tosca, Arya Udry, Tomohiro Usui,
+Michael A. Velbel, Meenakshi Wadhwa, and Maria-
+Paz Zorzano. The Scientific Importance of Return-
+ing Airfall Dust as a Part of Mars Sample Return
+(MSR).
+Astrobiology, 22(S1):S–176–S–185, 2022.
+PMID: 34904884.
+[3] Timothy D. Swindle, Sushil Atreya, Henner Buse-
+mann, Julia A. Cartwright, Paul Mahaffy, Bernard
+Marty, Andreas Pack, and Susanne P. Schwenzer. Sci-
+entific Value of Including an Atmospheric Sample as
+Part of Mars Sample Return (MSR).
+Astrobiology,
+22(S1):S–165–S–175, 2022. PMID: 34904893.
+[4] Brandi L. Carrier, David W. Beaty, Aurore Hutzler,
+Alvin L. Smith, Gerhard Kminek, Michael A. Meyer,
+Timothy Haltigin, Lindsay E. Hays, Carl B. Agee,
+Henner Busemann, Barbara Cavalazzi, Charles S.
+Cockell, Vinciane Debaille, Daniel P. Glavin, Mon-
+ica M. Grady, Ernst Hauber, Bernard Marty, Fran-
+cis M. McCubbin, Lisa M. Pratt, Aaron B. Regberg,
+Caroline L. Smith, Roger E. Summons, Timothy D.
+Swindle, Kimberly T. Tait, Nicholas J. Tosca, Arya
+Udry, Tomohiro Usui, Michael A. Velbel, Meenakshi
+Wadhwa, Frances Westall, and Maria-Paz Zorzano.
+Science and Curation Considerations for the Design
+of a Mars Sample Return (MSR) Sample Receiving
+Facility (SRF). Astrobiology, 22(S1):S–217–S–237,
+2022. PMID: 34904886.
+[5] National Research Council. Vision and Voyages for
+Planetary Science in the Decade 2013-2022. The Na-
+tional Academies Press, Washington, DC, 2011.
+[6] United Nations General Assembly.
+2222 (XXI).
+Treaty on Principles Governing the Activities of States
+in the Exploration and Use of Outer Space, including
+the Moon and Other Celestial Bodies, 1967. Article
+IX.
+[7] COSPAR Policy on Planetary Protection. Space Re-
+search Today, 211:12–25, 2021.
+[8] NASA Office of Safety and Mission Assurance. Plan-
+etary Protection Provisions for Robotic Extraterres-
+trial Missions, 2021. NPR 8715.24.
+IAC-22-A3.3A.10
+Page 9 of 9
