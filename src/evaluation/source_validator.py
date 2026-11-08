@@ -1,33 +1,32 @@
-def validate_answer_source(
+def validate_sources(
     answer,
-    retrieved_chunks
+    retrieved_context
 ):
     """
-    Measure how much of the answer
-    is supported by retrieved context.
+    Measures overlap between
+    generated answer and retrieved context.
     """
 
     answer_words = set(
         answer.lower().split()
     )
 
-    context_words = set()
+    context_words = set(
+        retrieved_context.lower().split()
+    )
 
-    for chunk in retrieved_chunks:
+    if len(answer_words) == 0:
+        return 0.0
 
-        context_words.update(
-            chunk.lower().split()
-        )
-
-    overlap = len(
+    overlap = (
         answer_words.intersection(
             context_words
         )
     )
 
-    score = overlap / max(
-        len(answer_words),
-        1
+    score = (
+        len(overlap)
+        / len(answer_words)
     )
 
     return round(score, 2)

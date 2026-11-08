@@ -1,0 +1,32 @@
+[
+    {
+        "question": "What is the Mars Sample Return mission?",
+        "answer": "The Mars Sample Return (MSR) campaign is a mission to seek signs of ancient life on Mars by collecting samples of rock, regolith, and atmosphere and possibly returning them to Earth. It includes multiple elements: Mars 2020, which is collecting samples through the Perseverance rover; later missions to recover the sample tubes, launch them into Mars orbit, and transport them back to Earth; and a Sample Receiving Facility where the samples would be analyzed.",
+        "latency": 2.7212,
+        "source_score": 0.79
+    },
+    {
+        "question": "What is the purpose of the Earth Return Orbiter?",
+        "answer": "The Earth Return Orbiter’s purpose is to rendezvous with the orbiting Mars samples, allow the Capture, Containment, and Return System (CCRS) to capture and contain them, robotically insert them into the Earth Entry System (EES), and transport them back to Earth.",
+        "latency": 1.6135,
+        "source_score": 0.83
+    },
+    {
+        "question": "What spacecraft is responsible for returning samples to Earth?",
+        "answer": "The Earth Return Orbiter (ERO) is responsible for transporting the samples back to Earth.",
+        "latency": 1.4894,
+        "source_score": 0.77
+    },
+    {
+        "question": "Why are Mars samples collected?",
+        "answer": "To answer key questions about Mars’ biological evolution and to shed light on the history of Mars, the Earth, and the solar system.",
+        "latency": 1.4702,
+        "source_score": 0.89
+    },
+    {
+        "question": "How are samples transported back to Earth?",
+        "answer": "Samples are transported back to Earth by the Earth Return Orbiter (ERO) and the Capture, Containment, and Return System (CCRS). ERO rendezvous with the orbiting samples, and CCRS captures them, contains them, and robotically inserts them into the Earth Entry System (EES), a capsule that returns the samples to Earth. About three days before arrival, CCRS releases the EES on an Earth-entry trajectory, and the capsule then passively enters Earth’s atmosphere and lands safely.",
+        "latency": 1.912,
+        "source_score": 0.78
+    }
+]

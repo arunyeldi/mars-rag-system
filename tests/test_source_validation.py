@@ -7,7 +7,7 @@ from src.generation.generator import (
 )
 
 from src.evaluation.source_validator import (
-    validate_answer_source
+    validate_sources
 )
 
 question = (
@@ -23,7 +23,7 @@ answer = generate_answer(
     context
 )
 
-score = validate_answer_source(
+score = validate_sources(
     answer,
     [context]
 )

@@ -4,31 +4,65 @@ import json
 with open(
     "data/evaluation/results.json",
     encoding="utf-8"
-) as file:
+) as f:
+    results = json.load(f)
 
-    results = json.load(file)
+total_questions = len(results)
 
-latencies = [
-    item["latency"]
+avg_latency = round(
+    sum(
+        item["latency"]
+        for item in results
+    ) / total_questions,
+    2
+)
+
+avg_score = round(
+    sum(
+        item["source_score"]
+        for item in results
+    ) / total_questions,
+    2
+)
+
+best_score = max(
+    item["source_score"]
     for item in results
+)
+
+worst_score = min(
+    item["source_score"]
+    for item in results
+)
+
+failed = [
+    item
+    for item in results
+    if item["source_score"] < 0.60
 ]
 
-avg_latency = (
-    sum(latencies)
-    / len(latencies)
+print("\n===== NASA RAG REPORT =====")
+
+print(
+    f"\nQuestions: {total_questions}"
 )
 
 print(
-    f"Average Latency: "
-    f"{round(avg_latency, 2)} sec"
+    f"Average Latency: {avg_latency}s"
 )
 
 print(
-    f"Min Latency: "
-    f"{min(latencies)} sec"
+    f"Average Source Score: {avg_score}"
 )
 
 print(
-    f"Max Latency: "
-    f"{max(latencies)} sec"
+    f"Best Score: {best_score}"
+)
+
+print(
+    f"Worst Score: {worst_score}"
+)
+
+print(
+    f"Failures: {len(failed)}"
 )
