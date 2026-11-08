@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is the Mars Sample Return mission?",
+        "ground_truth": "Mars Sample Return is a campaign to collect and return Martian samples to Earth."
+    },
+    {
+        "question": "What is the purpose of the Earth Return Orbiter?",
+        "ground_truth": "The Earth Return Orbiter captures and transports the sample container back to Earth."
+    },
+    {
+        "question": "What spacecraft is responsible for returning samples to Earth?",
+        "ground_truth": "The Earth Return Orbiter is responsible for returning samples to Earth."
+    },
+    {
+        "question": "Why are Mars samples collected?",
+        "ground_truth": "Mars samples are collected for scientific analysis on Earth."
+    },
+    {
+        "question": "How are samples transported back to Earth?",
+        "ground_truth": "Samples are captured and transported by the Earth Return Orbiter."
+    }
+]
