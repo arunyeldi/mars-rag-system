@@ -1,5 +1,5 @@
 import json
-import pandas as pd
+
 from datasets import Dataset
 
 
@@ -8,42 +8,33 @@ def build_ragas_dataset():
     with open(
         "data/evaluation/results.json",
         encoding="utf-8"
-    ) as file:
+    ) as f:
 
-        results = json.load(file)
+        results = json.load(f)
 
-    with open(
-        "data/evaluation/golden_dataset.json",
-        encoding="utf-8"
-    ) as file:
+    data = {
+        "question": [],
+        "answer": [],
+        "ground_truth": [],
+        "contexts": []
+    }
 
-        golden = json.load(file)
+    for item in results:
 
-    rows = []
-
-    for result, truth in zip(
-        results,
-        golden
-    ):
-
-        rows.append(
-            {
-                "question":
-                    result["question"],
-
-                "answer":
-                    result["answer"],
-
-                "ground_truth":
-                    truth["ground_truth"],
-
-                "contexts":
-                    ["placeholder"]
-            }
+        data["question"].append(
+            str(item["question"])
         )
 
-    dataframe = pd.DataFrame(rows)
+        data["answer"].append(
+            str(item["answer"])
+        )
 
-    return Dataset.from_pandas(
-        dataframe
-    )
+        data["ground_truth"].append(
+            str(item["ground_truth"])
+        )
+
+        data["contexts"].append(
+            item["contexts"]
+        )
+
+    return Dataset.from_dict(data)

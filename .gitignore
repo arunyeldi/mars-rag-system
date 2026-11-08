@@ -1,5 +1,6 @@
 # Virtual Environment
 .venv/
+.venv-ragas/
 
 # Python
 __pycache__/

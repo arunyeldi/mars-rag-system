@@ -87,6 +87,8 @@ def evaluate_dataset():
             {
                 "question": question,
                 "answer": answer,
+                "ground_truth": item["ground_truth"],
+                "contexts": context.split("\n\n"),
                 "latency": latency,
                 "source_score": score
             }
