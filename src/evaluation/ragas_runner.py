@@ -2,7 +2,9 @@ from ragas import evaluate
 
 from ragas.metrics import (
     faithfulness,
-    answer_relevancy
+    answer_relevancy,
+    context_precision,
+    context_recall
 )
 
 from src.evaluation.ragas_dataset_builder import (
@@ -23,7 +25,10 @@ print(dataset.features)
 results = evaluate(
     dataset=dataset,
     metrics=[
-        answer_relevancy
+        answer_relevancy,
+        faithfulness,
+        context_precision,
+        context_recall
     ],
     llm=azure_llm,
     embeddings=azure_embeddings
