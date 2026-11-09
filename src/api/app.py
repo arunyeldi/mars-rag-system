@@ -37,12 +37,13 @@ app = FastAPI(
 
 validate_config()
 
-@app.get("/")
-def health_check():
+
+@app.get("/health")
+def health():
 
     return {
         "status": "healthy",
-        "service": "NASA RAG"
+        "configuration": "valid"
     }
 
 
