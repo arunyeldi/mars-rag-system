@@ -30,3 +30,18 @@ def retrieve_context(
     )
 
     return results
+
+
+def has_good_similarity(
+    results
+):
+
+    best_distance = (
+        results["distances"][0][0]
+    )
+
+    print(
+        f"\nBEST DISTANCE = {best_distance}"
+    )
+
+    return best_distance < 0.7

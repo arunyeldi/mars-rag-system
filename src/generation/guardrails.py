@@ -1,13 +1,18 @@
-def sufficient_context(
-    retrieval_results
+NO_ANSWER_MESSAGE = (
+    "I could not find sufficient "
+    "information in the NASA documents."
+)
+
+
+def has_sufficient_context(
+    context: str
 ):
 
-    distances = (
-        retrieval_results["distances"][0]
-    )
+    if not context:
+        return False
 
-    best_distance = min(
-        distances
-    )
+    if len(context.strip()) < 100:
+        return False
 
-    return best_distance < 0.5
+    return True
+

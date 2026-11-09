@@ -1,4 +1,10 @@
 from fastapi import FastAPI
+from fastapi import HTTPException
+
+from src.api.exceptions import (
+    RAGException
+)
+
 
 from src.api.models import (
     QueryRequest,
@@ -42,11 +48,21 @@ def query_documents(
     request: QueryRequest
 ):
 
-    result = run_rag_pipeline(
-        request.question
-    )
+    try:
 
-    return QueryResponse(
-        answer=result["answer"],
-        sources=result["sources"]
-    )
+        result = run_rag_pipeline(
+            request.question
+        )
+
+        return QueryResponse(
+            answer=result["answer"],
+            sources=result["sources"],
+            latency=result["latency"]
+        )
+
+    except RAGException as ex:
+
+        raise HTTPException(
+            status_code=500,
+            detail=str(ex)
+        )
