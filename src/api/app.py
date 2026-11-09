@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from fastapi import HTTPException
 
+from src.config import (
+    validate_config
+)
+
 from src.api.exceptions import (
     RAGException
 )
@@ -30,6 +34,8 @@ app = FastAPI(
     """,
     version="1.0.0"
 )
+
+validate_config()
 
 @app.get("/")
 def health_check():
