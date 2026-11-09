@@ -1,6 +1,5 @@
 NO_ANSWER_MESSAGE = (
-    "I could not find sufficient "
-    "information in the NASA documents."
+    "I could not find sufficient information in the NASA documents."
 )
 
 
