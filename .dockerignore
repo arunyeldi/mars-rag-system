@@ -1,0 +1,17 @@
+.venv
+.venv-ragas
+
+__pycache__
+.pytest_cache
+
+.git
+.gitignore
+
+logs
+
+debug
+
+docs
+
+*.pyc
+*.pyo
