@@ -13,7 +13,7 @@ __pycache__/
 .vscode/
 
 # Chroma
-chroma_db/
+
 
 # Logs
 logs/
