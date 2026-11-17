@@ -1,5 +1,8 @@
+import os
+
 from fastapi import FastAPI
 from fastapi import HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.config import (
     validate_config
@@ -33,6 +36,22 @@ app = FastAPI(
     - Source Citations
     """,
     version="1.0.0"
+)
+
+frontend_origins = [
+    origin.strip()
+    for origin in os.getenv(
+        "FRONTEND_ORIGINS",
+        "http://localhost:3000"
+    ).split(",")
+    if origin.strip()
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=frontend_origins,
+    allow_methods=["POST", "OPTIONS"],
+    allow_headers=["Accept", "Content-Type"],
 )
 
 validate_config()
