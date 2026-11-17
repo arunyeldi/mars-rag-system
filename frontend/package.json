@@ -1,0 +1,41 @@
+{
+  "name": "apollox-ai-retrieval-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/d3-color": "^3.1.3",
+    "@types/d3-path": "^3.1.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.29",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.33",
+    "postcss-selector-parser": "^6.1.6"
+  }
+}
